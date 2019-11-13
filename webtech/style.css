@@ -6,10 +6,13 @@
 
         /* Add a gray background color and some padding to the footer */
 footer {
-    background-color: #f2f2f2;
+    background-color: #afaeae;
     padding: 25px;
+    
 }
-
+li{
+    font-size: 1em;
+}
 .carousel-inner img {
     width: 100%;
     /* Set width to 100% */
@@ -74,3 +77,65 @@ body {
     font-family: 'Kanit', sans-serif;
 
 }
+
+/* Button Styles บทความน่าสนใจ*/
+
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid rgb(66, 177, 44);
+    margin: 20px 20px 20px 20px;
+    color: rgb(15, 14, 15);
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  h5 {
+    color: rgb(10, 240, 240);
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  #button-5 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+  }
+  
+  #button-5 h5 {
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+  
+  #translate {
+    transform: rotate(50deg);
+    width: 100%;
+    height: 250%;
+    left: -200px;
+    top: -30px;
+    background: rgba(136, 221, 161, 0.877);
+    position: absolute;
+    transition: all .3s ease-Out;
+  }
+  
+  #button-5:hover #translate {
+    left: 0;
+  }
+  
+  #button-5:hover h5 {
+    color: rgb(253, 253, 253);
+  }
+  
+  
+
+
+  
+  
+  
+  
+  
