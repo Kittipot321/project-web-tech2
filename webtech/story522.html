@@ -958,10 +958,13 @@
 
         <br><br>
         <button type="submit" onclick="changecolor()">ส่งคำตอบ</button>
+        <br>
+        <h3 id="result">Result :</h3>
 
         <script>
             function changecolor() {
                 var color = ["red", "green"];
+                var num = 0;
                 var str2 = document.getElementById("test2").value;
                 var str5 = document.getElementById("test5").value; 
                 var str8 = document.getElementById("test8").value;
@@ -984,30 +987,35 @@
                 var str69 = document.getElementById("test69").value;
                 if (str2 == "transfuse blood") {
                     test2.style.color = color[1];
+                    num++;
                 }
                 else {
                     test2.style.color = color[0];
                 }
                 if (str5 == "blood vessel") {
                     test5.style.color = color[1];
+                    num++;
                 }
                 else {
                     test5.style.color = color[0];
                 }
                 if (str8 == "capillary") {
                     test8.style.color = color[1];
+                    num++;
                 }
                 else {
                     test8.style.color = color[0];
                 }
                 if (str11 == "bleed") {
                     test11.style.color = color[1];
+                    num++;
                 }
                 else {
                     test11.style.color = color[0];
                 }
                 if (str12 == "เลือดกำเดา") {
                     test12.style.color = color[1];
+                    num++;
                 }
                 else {
                     test12.style.color = color[0];
@@ -1015,95 +1023,110 @@
                 
                 if (str14 == "coma") {
                     test14.style.color = color[1];
+                    num++;
                 }
                 else {
                     test14.style.color = color[0];
                 }
                 if (str16 == "Aluminum Crutches") {
                     test16.style.color = color[1];
+                    num++;
                 }
                 else {
                     test16.style.color = color[0];
                 }
                 if (str17 == "การรักษา") {
                     test17.style.color = color[1];
+                    num++;
                 }
                 else {
                     test17.style.color = color[0];
                 }
                 if (str18 == "หมอ") {
                     test18.style.color = color[1];
+                    num++;
                 }
                 else {
                     test18.style.color = color[0];
                 }
                 if (str26 == "physician") {
                     test26.style.color = color[1];
+                    num++;
                 }
                 else {
                     test26.style.color = color[0];
                 }
                 if (str28 == "pediatrician") {
                     test28.style.color = color[1];
+                    num++;
                 }
                 else {
                     test28.style.color = color[0];
                 }
                 if (str30 == "สูติแพทย์") {
                     test30.style.color = color[1];
+                    num++;
                 }
                 else {
                     test30.style.color = color[0];
                 }
                 if (str31 == "neurologist") {
                     test31.style.color = color[1];
+                    num++;
                 }
                 else {
                     test31.style.color = color[0];
                 }
                 if (str38 == "เพื่อความสวยงาม") {
                     test38.style.color = color[1];
+                    num++;
                 }
                 else {
                     test38.style.color = color[0];
                 }
                 if (str44 == "health") {
                     test44.style.color = color[1];
+                    num++;
                 }
                 else {
                     test44.style.color = color[0];
                 }
                 if (str47 == "wart") {
                     test47.style.color = color[1];
+                    num++;
                 }
                 else {
                     test47.style.color = color[0];
                 }
                 if (str52 == "diagnosis") {
                     test52.style.color = color[1];
+                    num++;
                 }
                 else {
                     test52.style.color = color[0];
                 }
                 if (str59 == "อาเจียน") {
                     test59.style.color = color[1];
+                    num++;
                 }
                 else {
                     test59.style.color = color[0];
                 }
                 if (str64 == "การอักเสบ") {
                     test64.style.color = color[1];
+                    num++;
                 }
                 else {
                     test64.style.color = color[0];
                 }
                 if (str69 == "suction") {
                     test69.style.color = color[1];
+                    num++;
                 }
                 else {
                     test69.style.color = color[0];
                 }
-
+                document.getElementById('result').innerText = "คะเเนน : " + num + " / 20";
             }
 
         </script>

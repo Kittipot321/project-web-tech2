@@ -324,6 +324,7 @@
         <script>
             function changecolor() {
                 var color = ["red", "green"];
+                var num = 0;
                 var str2 = document.getElementById("test2").value;
                 var str3 = document.getElementById("test3").value;
                 var str5 = document.getElementById("test5").value;
@@ -334,53 +335,61 @@
                 var str20 = document.getElementById("test20").value;
                 if (str2 == "startup") {
                     test2.style.color = color[1];
+                    num++;
                 }
                 else {
                     test2.style.color = color[0];
                 }
                 if (str3 == "revenue") {
                     test3.style.color = color[1];
+                    num++;
                 }
                 else {
                     test3.style.color = color[0];
                 }
                 if (str5 == "ดอกเบี้ย") {
                     test5.style.color = color[1];
+                    num++;
                 }
                 else {
                     test5.style.color = color[0];
                 }
                 if (str6 == "inventory") {
                     test6.style.color = color[1];
+                    num++;
                 }
                 else {
                     test6.style.color = color[0];
                 }
                 if (str8 == "shareholder") {
                     test8.style.color = color[1];
+                    num++;
                 }
                 else {
                     test8.style.color = color[0];
                 }
                 if (str12 == "กำไร") {
                     test12.style.color = color[1];
+                    num++;
                 }
                 else {
                     test12.style.color = color[0];
                 }
                 if (str16 == "income statement") {
                     test16.style.color = color[1];
+                    num++;
                 }
                 else {
                     test16.style.color = color[0];
                 }
                 if (str20 == "เครดิด") {
                     test20.style.color = color[1];
+                    num++;
                 }
                 else {
                     test20.style.color = color[0];
                 }
-                
+                document.getElementById('result').innerText = "คะเเนน : " + num + " / 8";
             }
 
         </script>
