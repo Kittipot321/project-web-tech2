@@ -37,7 +37,32 @@
             font-size: 60px;
             color: rgb(48, 196, 159);
         }
-
+        .fed,h3{
+            animation-name: example;
+            animation-duration: 2s;
+        }
+        .btntostory{
+            animation-name: button;
+            animation-duration: 2s;
+        }
+        @keyframes example {
+            From{
+                color:transparent;
+            }
+            To{
+                color:white;
+            }
+        }
+        @keyframes button {
+            From{
+                width: 1%;
+                color:transparent;
+            }
+            To{
+                width:11%;
+                color:white;
+            }
+        }
 
         @media only screen and (max-width: 760px) {
             .dropdown-item {
@@ -113,9 +138,9 @@
     </nav>
     <div class="jumbotron text-center">
         <h3 class="display-4">เว็บสำหรับการเรียนรู้ภาษาอังกฤษเพื่อการสื่อสาร สำหรับผู้เริ่มต้น</h3>
-        <p><small>เราทำเว็บนี้ขึ้นมาเพื่อให้ผู้เรียนสามารถพูดสนทนาภาษาอังกฤษในสถานการณ์ที่หลากหลายโดยใช้รูปแบบพื้นฐานของบทสนทนาได้อย่างมีประสิทธิภาพ</small>
+        <p class="fed"><small>เราทำเว็บนี้ขึ้นมาเพื่อให้ผู้เรียนสามารถพูดสนทนาภาษาอังกฤษในสถานการณ์ที่หลากหลายโดยใช้รูปแบบพื้นฐานของบทสนทนาได้อย่างมีประสิทธิภาพ</small>
         </p>
-        <a href="#first" class="btn btn-lg btn-primary">ดูเนื้อหาของเรา</a>
+        <a href="#first" class="btn btn-lg btn-primary btntostory">ดูเนื้อหาของเรา</a>
     </div>
     <div class="container" id="first">
         <br><br><br>
